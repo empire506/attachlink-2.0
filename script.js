@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // create success message
       const success = document.createElement("p");
       success.textContent = "✅ Thanks for submitting your details!";
-      success.style.color = "green";
+      success.style.color = " black";
       success.style.fontWeight = "bold";
       success.style.textAlign = "center";
       success.style.marginTop = "15px";

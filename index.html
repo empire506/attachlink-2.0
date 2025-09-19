@@ -41,6 +41,9 @@
           <button class="close-btn" onclick="hideForm('student-card')">×</button>
           <h2>Student Application Form</h2>
           <form>
+            <label>name:
+              <input type="name" required>
+            </label>
             <label>Email:
               <input type="email" required>
             </label>
@@ -97,31 +100,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-      const forms = document.querySelectorAll('.form-section');
-      forms.forEach(form => {
-        if (form.id === formId) {
-          form.style.display = 'block';
-          document.getElementById(cardId).querySelector('.card-content').style.display = 'none';
-        } else {
-          form.style.display = 'none';
-        }
-      });
-    }
 
-    function hideForm(cardId) {
-      document.getElementById(cardId).querySelector('.form-section').style.display = 'none';
-      document.getElementById(cardId).querySelector('.card-content').style.display = 'block';
-    }
-
-    function toggleMenu() {
-      const nav = document.getElementById('navbar');
-      if (nav.style.display === 'block') {
-        nav.style.display = '';
-      } else {
-        nav.style.display = 'block';
-      }
-    }
-  </script>
-  <script src="script.js"></script>
-</body>
-</html>
